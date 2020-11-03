@@ -11,27 +11,27 @@ int main()
     i = K;
     while (i <= N)
     {
-        P *=(K/i +i/N);
+        P *=(K*1.0/i +i*1.0/N);
         i++;
     }
     cout << P << endl;
     P = 1;
     i = K;
     do {
-        P *=(K/i +i/N);
+        P *=(K*1.0/i +i*1.0/N);
         i++;
     } while (i <= N);
     cout << P << endl;
     P = 1;
     for (i=K; i <= N; i++)
     {
-        P *=(K/i +i/N);
+        P *=(K*1.0/i +i*1.0/N);
     }
     cout << P << endl;
     P = 1;
     for (i=N; i >= K; i--)
     {
-        P *=(K/i +i/N);
+        P *=(K*1.0/i +i*1.0/N);
     }
     cout << P << endl;
     return 0;
